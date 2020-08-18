@@ -27,6 +27,7 @@ jobs:
       with:
         username: ${{ secrets.REPOSITORY_USERNAME }}
         password: ${{ secrets.REPOSITORY_PASSWORD }}
-        repository: registry.dev.clashofcoins.co
+        registry: registry.dev.clashofcoins.co
+        repository: myorg/myrepository
         tag_with_ref: true
         tag_with_sha: true

@@ -6,9 +6,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ nartykaly ]
   pull_request:
-    branches: [ master ]
+    branches: [ nartykaly ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,6 +28,6 @@ jobs:
         username: ${{ secrets.REPOSITORY_USERNAME }}
         password: ${{ secrets.REPOSITORY_PASSWORD }}
         registry: registry.dev.clashofcoins.co
-        repository: test/main
+        repository: test/nartykaly
         tag_with_ref: true
         tag_with_sha: true
